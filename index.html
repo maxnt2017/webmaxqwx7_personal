@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Зелений Сайт з Анімацією</title>
+    <title>Покращений Зелений Сайт</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-animation"></div>
     <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#table-section">Таблиця</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
         <h1>Ласкаво просимо на Зелений Сайт!</h1>
+        <p class="subtitle">Сучасний та привабливий веб-сайт для вашого задоволення.</p>
     </header>
     <main>
-        <section class="intro">
-            <p>Привіт! Це красивий зелений сайт з невеликою анімацією для настрою.</p>
-            <div class="animated-element">✨</div>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Відкрийте для себе світ зелені та інновацій</h2>
+                <p>Наш сайт пропонує вам унікальний досвід у поєднанні з екологічною свідомістю.</p>
+                <a href="#about" class="button">Дізнатися більше</a>
+            </div>
         </section>
-        <section class="content">
-            <p>Тут може бути будь-який інший контент твого сайту.</p>
+        <section id="about" class="about">
+            <h2>Про нас</h2>
+            <p>Ми команда ентузіастів, які прагнуть створити краще майбутнє через зелені технології та інноваційні рішення. Наша мета - надихати та інформувати наших відвідувачів.</p>
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Екологічність</h3>
+                    <p>Ми дбаємо про навколишнє середовище.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Інновації</h3>
+                    <p>Постійно впроваджуємо нові рішення.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Якість</h3>
+                    <p>Гарантуємо високий рівень сервісу.</p>
+                </div>
+            </div>
+        </section>
+        <section id="table-section" class="google-table">
+            <h2>Дані з Google Таблиці</h2>
+            <iframe src="https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/pubhtml?widget=true&amp;headers=false" width="100%" height="600" frameborder="0"></iframe>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Зв'яжіться з нами</h2>
+            <p>Маєте запитання? Напишіть нам!</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Відправити</button>
+            </form>
         </section>
     </main>
     <footer>
